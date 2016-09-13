@@ -3,16 +3,19 @@
 }
 
 .name {
-    font-size: 1.3em;
+    padding-top: 10px;
+    font-size: 15px;
     color:black;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .image {
-    border-radius: 40px;
+    border-radius: 50px;
     height: 60px;
     width: 60px;
     margin: 0 auto;
+    text-align: center;
+    vertical-align: middle;
     background: rgba(52,152,219,1);
 }
 
@@ -26,9 +29,10 @@ svg {
 }
 
 .job {
-    font-size: 0.86em;
+    font-size: 11px;
     color:black;
     font-weight: 100;
+    padding-top: 5px;
 }
 .profile-frame {
     background: rgba(51, 72, 95, 1);
@@ -47,31 +51,33 @@ svg {
     top:13%;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-    width:100%;
+.profile {
+    display: block;
+    position: relative;
+    top: 42px;
+    float:left;
+    width: 281px;
     height: 100%;
-    margin: 0 auto;
     text-align: center;
 }
 
-td.tableProfile {
-    padding-top: 10px;
-    width: 282px;
-}
-
-td.tableStats {
-    border-bottom-color:white;
+.stats {
+    float:left;
+    width:140px;
     background: rgba(52,152,219,1);
-    display: table-cell;
-    position: relative;
-    line-height: 1.5em;
 }
 
 .box {
-    height: 93px;
-    width: 140px;
+    height: 93.625px;
+    vertical-align: middle;
+    justify-content: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.box:nth-child(2){
+    border: solid 1px white;
+    border-width: 1px 0px 1px 0px;
 }
 
 span.value,span.parameter {
@@ -81,30 +87,33 @@ span.value,span.parameter {
 }
 
 span.value {
-    font-size: 1.1em;
-    font-weight: bold;
+    font-size: 18px;
+    font-weight: 400;
 }
 
 span.parameter {
-    font-size: 0.75em;
+    font-size: 11px;
     font-weight: 100;
 }
 
 
 .actions {
     display: inline-block;
+    padding-top: 13px;
 }
 
 button.button {
   -webkit-border-radius: 30;
   -moz-border-radius: 30;
+  height: 30px;    
   width:180px;
   margin: 5px;
   border-radius: 30px;
   font-family: Arial;
-  color: #2b2b2b;
+  font-weight: 600;
+  color: rgba(43,61,82,1);
   background-color:white;    
-  font-size: 10px;
+  font-size: 12px;
   padding: 10px 20px 10px 20px;
   border: solid #000000 2px;
   text-decoration: none;
